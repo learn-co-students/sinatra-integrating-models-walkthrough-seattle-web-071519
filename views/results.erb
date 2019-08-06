@@ -1,9 +1,9 @@
 <h1>Your Text Analysis</h1>
 
-<h2>Number of Words: </h2>
+<h2>Number of Words: <%= @texty.word_count%></h2>
 
-<h2>Vowels: </h2>
+<h2>Vowels: <%=@texty.vowels%><h2>
 
-<h2>Consonants: </h2>
+<h2>Consonants: <%=@texty.consonants%></h2>
 
-<h2>Most Common Letter: _____ used _____ times</h2>
+<p>Most Common Letter: <%=@texty.most_used_char.upcase%>, used <%=@texty.most_used_times%> times</p>
